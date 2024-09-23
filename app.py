@@ -30,6 +30,9 @@ def predict_genre():
         'gender': gender,
         'predicted_genre': genre
     })
+@app.route('/', methods=['GET'])
+def print():
+    print("hello i am animesh")
 
 if __name__ == '__main__':
     app.run(debug=True)
